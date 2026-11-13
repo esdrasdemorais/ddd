@@ -8,13 +8,16 @@ import com.mongodb.client.MongoDatabase;
 
 public abstract class Client implements IClient {
 	private String database;
-	private String host;
-	private Integer port;
+	private final String host;
+	private final Integer port;
+	private final String connectionString;
 	protected MongoClient mongoClient = null;
 	
-	public Client(String host, Integer port) {
+	public Client(String connectionString, String host, Integer port) {
+		this.connectionString = connectionString;
 		this.host = host;
 		this.port = port;
+		mongoClient = new MongoClient();
 	}
 
 	public void setHost(String host) {
