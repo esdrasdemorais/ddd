@@ -30,8 +30,8 @@ public abstract class Repository<T> extends Context implements IRepository<T> {
 	}
 
 	@Override
-	public List<T> findAll() {
-		return repositoryImpl.findAll();
+	public List<T> findAll(T clas) {
+		return repositoryImpl.findAll(clas);
 	}
 
 	@Override

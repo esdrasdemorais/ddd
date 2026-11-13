@@ -12,46 +12,12 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 
-public class MongoContext extends Context {    
-    public MongoContext() {
-    	super(null, null, null);
-    	try {
-            init();
-        } catch(Exception ex) {
-        	ex.printStackTrace();
-        }
-    }
-    
-    public MongoContext(IDb db) {
-    	super(null, null, db);
-    	this.db = db;
-    	try {
-            init();
-        } catch(Exception ex) {
-        	ex.printStackTrace();
-        }
-    }
-
+public class MongoContext extends Context {       
 	public MongoContext(IContext context, IClient client, IDb db) 
 		throws UnknownHostException
 	{
 		super(context, client, db);
-		this.init();
 	}
-	
-    private void init() throws UnknownHostException {
-		if (MongoContext.context == null) {
-			MongoClientImpl mongoCli = new MongoClientImpl(
-				System.getProperty("mongo.uri")
-			);
-		    this.client = mongoCli;
-			MongoContext.context = new MongoContext(
-				null, 
-				this.client, 
-				null
-			);
-		}
-    }
 
 	public void init(IContext context) throws UnknownHostException {
 	

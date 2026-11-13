@@ -17,6 +17,7 @@ public abstract class Client implements IClient {
 		this.connectionString = connectionString;
 		this.host = host;
 		this.port = port;
+		mongoClient = new MongoClient();
 	}
 
 	public void setHost(String host) {

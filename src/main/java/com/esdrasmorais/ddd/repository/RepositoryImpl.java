@@ -18,7 +18,7 @@ public abstract class RepositoryImpl<T> extends Context {
 
 	public abstract Boolean remove(T object);
 	
-	public abstract List<T> findAll();
+	public abstract List<T> findAll(T clas);
 
 	public abstract T findById(Long id);
 	

@@ -49,7 +49,7 @@ public class HibernateRepository<T> extends RepositoryImpl<T> {
 	}
 
 	@Override
-	public List<T> findAll() {
+	public List<T> findAll(T clas) {
 		// TODO Auto-generated method stub
 		return null;
 	}

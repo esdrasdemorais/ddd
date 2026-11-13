@@ -1,0 +1,5 @@
+#surefire_0
+#Fri Nov 13 00:35:29 GMT-03:00 2026
+basedir=/home/Downloads/ddd
+localRepository=/root/.m2/repository
+maven.resolver.transport=wagon

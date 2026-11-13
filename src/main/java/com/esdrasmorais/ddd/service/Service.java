@@ -13,8 +13,8 @@ public abstract class Service<T> implements IService<T> {
 		this._repository = repository;
 	}
 
-	public List<T> findAll() {
-		return this._repository.findAll();
+	public List<T> findAll(T clas) {
+		return this._repository.findAll(clas);
 	}
 
 	public T findById(Long id) {

@@ -4,7 +4,7 @@ package com.esdrasmorais.ddd.repository.interfaces;
 import java.util.List;
 
 public interface IRepository<T> {
-	public List<T> findAll();
+	public List<T> findAll(T clas);
 
 	public T findById(Long id);
 

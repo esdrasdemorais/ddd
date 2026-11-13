@@ -5,14 +5,14 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 
 public class MongoClientImpl extends Client {
-	public MongoClientImpl(String host, Integer port) {
-		super(host, port);
-		this.setMongoClient();
+	public MongoClientImpl(String connectionString, String host, Integer port) {
+		super(connectionString, host, port);
+		this.setMongoClient(connectionString);
 	}
 	
-	private void setMongoClient() {
+	private void setMongoClient(String connectionString) {
 		MongoClientURI mongoClientURI = new MongoClientURI(
-			System.getenv("mongo_uri")
+		    connectionString
 		);
 		this.mongoClient = new MongoClient(
 			mongoClientURI

@@ -8,8 +8,8 @@ import com.mongodb.client.MongoDatabase;
 
 public abstract class Client implements IClient {
 	private String database;
-	private final String host;
-	private final Integer port;
+	private String host;
+	private Integer port;
 	private final String connectionString;
 	protected MongoClient mongoClient = null;
 	

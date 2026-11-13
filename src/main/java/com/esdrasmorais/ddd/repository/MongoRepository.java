@@ -73,18 +73,17 @@ public abstract class MongoRepository<T> extends RepositoryImpl<T>
 	}
 
 	@Override
-	public List<T> findAll() {
-		T object = null;
+	public List<T> findAll(T clas) {
 		List<T> list = new ArrayList<>();
 		FindIterable<Document> iterable = this.getMongoDatabase()
-			.getCollection(object.getClass().getName()).find();
+			.getCollection(clas.getClass().getSimpleName()).find();
 		iterable.forEach(new Block<Document>() {
 			@Override
 			public void apply(final Document document) {
 				Gson gson = new Gson();
 				T obj = (T) gson.fromJson(
 					document.toJson(), 
-					object.getClass().getClass()
+					clas.getClass()
 				);
 				list.add(obj);
 			}

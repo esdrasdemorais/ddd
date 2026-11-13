@@ -4,7 +4,7 @@
 
 <groupId>com.esdrasdemorais</groupId>
 <artifactId>ddd</artifactId>
-<version>1.0.3</version>
+<version>1.0.4</version>
 <name>ddd</name>
 <description>Domain Driven Design Java Library</description>
 
@@ -56,14 +56,14 @@
   <dependency>
     <groupId>io.netty</groupId>
     <artifactId>netty-handler</artifactId>
-    <version>4.1.137.Final</version>
+    <version>4.2.20.Final</version>
     <scope>compile</scope>
     <optional>true</optional>
   </dependency>
   <dependency>
     <groupId>org.xerial.snappy</groupId>
     <artifactId>snappy-java</artifactId>
-    <version>1.1.10.4</version>
+    <version>1.1.10.9</version>
     <scope>compile</scope>
     <optional>true</optional>
   </dependency>

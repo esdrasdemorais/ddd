@@ -8,14 +8,14 @@ import com.esdrasmorais.ddd.repository.interfaces.IClient;
 import com.esdrasmorais.ddd.repository.interfaces.IContext;
 import com.esdrasmorais.ddd.repository.interfaces.IDb;
 
-public class JpaRepository extends RepositoryImpl {
+public class JpaRepository /*extends RepositoryImpl*/ {
 
 	public JpaRepository(Context context, IClient client, IDb db) {
-		super(context, client, db);
+		//super(context, client, db);
 	}
 	// private EntityManagerFactory factory;
 
-	@Override
+/*	@Override
 	public void init(IContext context) throws UnknownHostException {
 		// TODO Auto-generated method stub
 		
@@ -46,7 +46,7 @@ public class JpaRepository extends RepositoryImpl {
 	}
 
 	@Override
-	public List findAll() {
+	public List<T> findAll(T clas) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -57,15 +57,17 @@ public class JpaRepository extends RepositoryImpl {
 		return null;
 	}
 
+//    @Override
+//    public <T> List<T> find(String query, Object[] params) {
+//
+//    }
+
+
 	@Override
 	public void dispose() {
 		// TODO Auto-generated method stub
 		
 	}
-
-//    @Override
-//    public <T> List<T> find(String query, Object[] params) {
-//
-//    }
+*/
 
 }
