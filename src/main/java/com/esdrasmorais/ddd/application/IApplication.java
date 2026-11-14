@@ -3,7 +3,7 @@ package com.esdrasmorais.ddd.application;
 import java.util.List;
 
 public interface IApplication<T> {
-	public List<T> findAll();
+	public List<T> findAll(T clas);
 
 	public T findById(Long id);
 
