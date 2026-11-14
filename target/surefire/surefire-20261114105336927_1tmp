@@ -1,5 +1,5 @@
 #surefire
-#Fri Nov 13 00:35:29 GMT-03:00 2026
+#Sat Nov 14 10:53:36 GMT-03:00 2026
 childDelegation=false
 classPathUrl.0=/home/Downloads/ddd/target/test-classes
 classPathUrl.1=/home/Downloads/ddd/target/classes
@@ -47,7 +47,7 @@ mainCliOptions1=LOGGING_LEVEL_WARN
 mainCliOptions2=LOGGING_LEVEL_INFO
 mainCliOptions3=LOGGING_LEVEL_DEBUG
 mainCliOptions4=SHOW_ERRORS
-pluginPid=3988
+pluginPid=14003
 preferTestsFromInStream=false
 providerConfiguration=org.apache.maven.surefire.junit4.JUnit4Provider
 reportsDirectory=/home/Downloads/ddd/target/surefire-reports

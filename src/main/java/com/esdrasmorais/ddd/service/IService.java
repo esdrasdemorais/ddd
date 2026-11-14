@@ -4,7 +4,7 @@ package com.esdrasmorais.ddd.service;
 import java.util.List;
 
 public interface IService<T> {
-	public List<T> findAll();
+	public List<T> findAll(T clas);
 
 	public T findById(Long id);
 

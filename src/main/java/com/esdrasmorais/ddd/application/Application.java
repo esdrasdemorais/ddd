@@ -11,8 +11,8 @@ public abstract class Application<T> implements IApplication<T> {
 		this._service = service;
 	}
 
-	public List<T> findAll() {
-		return this._service.findAll();
+	public List<T> findAll(T clas) {
+		return this._service.findAll(clas);
 	}
 
 	public T findById(Long id) {
